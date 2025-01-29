@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div align="center">
+        <h2>Form Validation</h2>
+        <form>
+            <div>
+                <lable>Firstname: </lable>
+                <input type="text" id="fname" />
+                <span class="errors" id="fnameError" style="color: red;"></span>
+            </div>
+            <div>
+                <lable>Lastname: </lable>
+                <input type="text" id="lname" />
+                <span class="errors" id="lnameError" style="color: red;"></span>
+            </div>
+            <div>
+                <lable>Email: </lable>
+                <input type="text" id="email" />
+                <span class="errors" id="emailError" style="color: red;"></span>
+            </div>
+            <div>
+                <lable>Password: </lable>
+                <input type="text" id="password" />
+                <span class="errors" id="passError" style="color: red;"></span>
+            </div>
+            <div>
+                <lable>Gender: </lable>
+                <input type="radio" name="gender" value="Male" /> Male
+                <input type="radio" name="gender" value="Female" /> Female
+                <span class="errors" id="genderError" style="color: red;"></span>
+            </div>
+            <div>
+                <input type="submit"  value="Submit" />
+            </div>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="formjQUery.js"></script>
+</body>
+</html>
