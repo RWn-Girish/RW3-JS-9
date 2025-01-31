@@ -5,6 +5,17 @@ let mobileNo = document.querySelector("#mobileNo")
 let role = document.querySelector("#role")
 let addEmpFrom = document.querySelector("#addEmp")
 
+let efname = document.querySelector("#efname")
+let eemail = document.querySelector("#eemail")
+let epassword = document.querySelector("#epassword")
+let emobileNo = document.querySelector("#emobileNo")
+let erole = document.querySelector("#erole")
+let editEmpFrom = document.querySelector("#editEmp")
+
+let addEmployeeDiv = document.querySelector("#add-employee")
+let editEmployeeDiv = document.querySelector("#edit-employee")
+
+let updateIndex = null;
 
 addEmpFrom.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -56,3 +67,42 @@ function deleteEmployee(index) {
     localStorage.setItem("employees", JSON.stringify(allData));
     loadData();
 }
+
+
+function editEmployee(index) {
+    let allData = JSON.parse(localStorage.getItem('employees'))
+    // console.log(allData[index])
+    let record = allData[index]
+
+    efname.value = record.name
+    eemail.value = record.email
+    epassword.value = record.password
+    erole.value = record.role
+    emobileNo.value = record.mobileNo
+
+    updateIndex = index
+
+    addEmployeeDiv.style.display = "none"
+    editEmployeeDiv.style.display = "block"
+}
+
+
+editEmpFrom.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    let allData = JSON.parse(localStorage.getItem('employees'))
+
+    allData[updateIndex] = {
+        name: efname.value,
+        email: eemail.value,
+        password: epassword.value,
+        mobileNo: emobileNo.value,
+        role: erole.value
+    }
+
+    localStorage.setItem("employees", JSON.stringify(allData));
+    loadData();
+
+    addEmployeeDiv.style.display = "block"
+    editEmployeeDiv.style.display = "none"
+})
