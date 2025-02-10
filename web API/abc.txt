@@ -1,0 +1,7 @@
+Ajax, or Asynchronous JavaScript and XML, is a collection of web development techniques that allow web applications to send and receive data from a server without reloading the page. This makes web applications more responsive to user interactions. 
+
+Ajax, or Asynchronous JavaScript and XML, is a collection of web development techniques that allow web applications to send and receive data from a server without reloading the page. This makes web applications more responsive to user interactions. 
+
+Ajax, or Asynchronous JavaScript and XML, is a collection of web development techniques that allow web applications to send and receive data from a server without reloading the page. This makes web applications more responsive to user interactions. 
+
+Ajax, or Asynchronous JavaScript and XML, is a collection of web development techniques that allow web applications to send and receive data from a server without reloading the page. This makes web applications more responsive to user interactions. 
